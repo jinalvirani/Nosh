@@ -46,5 +46,6 @@ router.post('/addDabbaType', (req,res) => {
     })
 });
 
+router.get('disptype');
 
 module.exports = router;
