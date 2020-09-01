@@ -11,11 +11,11 @@ module.exports = (req,res,next) => {
             contactno: joi.string().length(10).required(),
             city: joi.string().required(),
             address: joi.string().required(),
-            notes: joi.string().required()
+            wallet: joi.string()
         });
-        joi.validate(req.body,Schema, (err,result) => {
-            if(err)
-                return res.status(400).json(err);
+        joi.validate(req.body,Schema, (validationerr,result) => {
+            if(validationerr)
+                return res.status(400).json(validationerr);
             else
                 next();
         });

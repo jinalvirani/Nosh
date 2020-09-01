@@ -1,8 +1,10 @@
 const jwt = require('jsonwebtoken');
+require('dotenv').config();
+// const config = require('../config');
 module.exports = (req,res,next) =>{
     try{
-        const unm =jwt.verify(req.headers.token,'jinalvirani');
-        console.log(unm);
+        const uid =jwt.verify(req.headers.token,process.env.tokenstring);
+        console.log(uid);
         next();
     }
     catch(validationerr)

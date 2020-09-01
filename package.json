@@ -5,12 +5,17 @@
   "main": "index.js",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
     "express": "^4.17.1",
+    "express-fileupload": "^1.1.6-alpha.5",
+    "helmet": "^3.21.1",
     "init": "^0.1.2",
     "joi": "^14.3.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.6.11",
+    "morgan": "^1.9.1",
     "node-gyp": "^5.0.3",
+    "nodemailer": "^6.3.0",
     "nodemon": "^1.19.1",
     "password-hash": "^1.2.2"
   },
